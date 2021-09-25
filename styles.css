@@ -1,0 +1,210 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+#game-container{
+  width: 800px;
+  height: 500px;
+  margin: 100px auto 0 auto;
+  border: 3px double black;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+}
+
+#game-container::before{
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("img/land.png") ;
+  transform: rotate(-3deg) scale(1.2);
+  filter:hue-rotate(40deg) contrast(1.2);
+  background-position: bottom;
+  background-size: 800px 800px;
+}
+
+#sky{
+  height: 200px;
+  width: 100%;
+  background-color: rgb(177, 255, 249);
+  position: absolute;
+  z-index: -1;
+}
+
+.tree{
+  position: absolute;
+  height: 200px;
+  width: 100px;
+  filter: contrast(1.2);
+}
+
+.tree-image{
+  height: 200px;
+  width: 200px;
+  margin-left: -50px;
+}
+
+#money-wrap{
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  background-color: rgba(70, 68, 0, 0.664);
+  padding: 5px;
+  border-radius: 5px;
+  width: 100px;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+}
+
+.money-icon{
+  height: 30px;
+  margin-right: 5px;
+  flex:1;
+}
+
+.money-display{
+  text-align: center;
+  color: white;
+  font-weight: 600;
+  align-self: center;
+  font-family: arial;
+  flex:2;
+}
+
+#add-obrero{
+  z-index: 100000;
+  padding: 5px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  right: 10px;
+  top: 60px;
+  width: 100px;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.37);
+}
+
+h3{
+  margin: 0px 0px 5px ;
+  text-align: center;
+  font-size: 17px;
+  font-family: arial;
+  color: white;
+}
+
+label{
+  color: rgba(255, 255, 255, 0.849);
+  font-size: 12px;
+  font-weight: 300;
+  font-family: arial;
+}
+
+.obrero-input{
+  justify-self: center;
+  width: 100%;
+  margin-bottom: 2px;
+}
+
+.obrero-input:focus{
+  outline: none;
+}
+
+#obrero-btn{
+  margin: 5px 0px 0px;
+  width: 100%;
+}
+
+.obrero{
+  position: absolute;
+  height: 200px;
+  width: 100px;
+}
+
+.obrero-image{
+  height: 200px;
+  width: 200px;
+  margin-left: -50px;
+}
+
+.pago{
+  background-color: rgba(0, 0, 0, 0.329);
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  position: absolute;
+  padding: 5px;
+  width: auto;
+  height: 40px;
+  border-radius: 15px;
+  font-size: 20px;
+}
+
+.pago .money-icon{
+  margin: 0 0 0 5px;
+}
+.pago .money-display{
+  text-align: center;
+  align-self: center;
+  line-height: 18px;
+}
+
+.left-button{
+  z-index: 100000;
+  padding: 5px;
+  position: absolute;
+  left: 10px;
+  width: 150px;
+  border-radius: 5px;
+  border: solid 1px gray;
+}
+
+#wipe-workers{
+  top: 10px;
+}
+
+#wipe-money{
+  top: 40px;
+}
+
+#regen-trees{
+  top: 70px;
+}
+
+.github-link{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  border-radius: 9999px;
+  background-color: white;
+  box-shadow: 0 1px 3px 3px white;
+  line-height: 0;
+}
+
+.github-link > a {
+  color: #1890ff;
+}
+
+/*
+#buy-list{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  right: 10px;
+  top: 100px;
+}
+
+.buy-item{
+  width: 110px;
+  padding: 5px 0px;
+  margin: 2px 0px;
+}
+*/
