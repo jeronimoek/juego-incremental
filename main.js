@@ -59,7 +59,7 @@ function renderPago(obrero, monto){
   pagoMonto.className = "money-display"
   pagoMonto.textContent = monto
   pagoImg.className = "money-icon"
-  pagoImg.src = "img/coin.png"
+  pagoImg.src = "https://automatas.duckdns.org/portfolio/juegoincremental/img/coin.png"
   pago.className = "pago"
   pago.style.top = obrero.y + "px"
   pago.style.left = obrero.x + "px"
@@ -87,9 +87,9 @@ function createTree(){
   tree.className = "tree"
   let treeRandom = Math.random()
   if(treeRandom > 0.5){
-    img.src = "img/tree.png"
+    img.src = "https://automatas.duckdns.org/portfolio/juegoincremental/img/tree.png"
   } else {
-    img.src = "img/pink-tree.png"
+    img.src = "https://automatas.duckdns.org/portfolio/juegoincremental/img/pink-tree.png"
   }
   img.className = "tree-image"
   tree.appendChild(img)
@@ -152,7 +152,7 @@ const createObrero = (function(){
       let obreroElem = document.createElement("div")
       let img = document.createElement("img")
       obreroElem.className = "obrero"
-      img.src = "img/woodcutter.png"
+      img.src = "https://automatas.duckdns.org/portfolio/juegoincremental/img/woodcutter.png"
       img.className = "obrero-image"
       obreroElem.appendChild(img)
       document.getElementById("game-container").appendChild(obreroElem)
